@@ -68,20 +68,21 @@ console.log(checkPrime(3));
 
 function printPrimes(numb1) {
     for (let i=0; i < numb1; i++) {
-        if (checkPrime() === true)
-    }
-    return printPrimes(97)
-}   
- console.log(printPrimes(97));
+        if (checkPrime(i) === true) {
+            console.log(i)
+        };
+    };
+};   
+ printPrimes(97);
 
-Part 7: Print Longest Word
+// Part 7: Print Longest Word
 
 function printLongestWord(array) {
     let longestWord = "";
     for (let i = 0; i < array.length; i++) {
         if (array[i].length > longestWord.length) {
             longestWord = array [i]
-        } else if (array[i].length === longWord.length) {
+        } else if (array[i].length === longestWord.length) {
             return longestWord;
         }
     }
