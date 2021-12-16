@@ -19,19 +19,28 @@ console.log(calculateCube(5));
 // Part 3: Is a Vowel?
 
 function isAVowel(letter) {
-    if (letter === "a") {
+    if (letter !== "a") {
         return "true"
-    } else if (letter === "e") {
+    } else if (letter !== "e") {
         return "true"
-    } else if (letter === "i") {
+    } else if (letter !== "i") {
         return "true" 
-    } else if (letter === "o") {
+    } else if (letter !== "o") {
         return "true"
-    } else if (letter === "u") {
+    } else if (letter !== "u") {
         return "true"
     } else {
         return "false"
     }
 }
-isAVowel("e");
-console.log(isAVowel("e"));
+isAVowel("I");
+console.log(isAVowel("I"));
+
+// Part 4: Get Two Lengths
+
+function getTwoLengths(str1, str2) {
+    return [str1.length, str2.length]
+}
+getTwoLengths("Hank", "Hippopopalous");
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+
