@@ -49,11 +49,43 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 function sumArray(array) {
     let sum = 0;
-    for(let i =0; i < array.length; i++) {
+    for(let i = 0; i < array.length; i++) {
         sum += array [i];   
     };
     return sum;
 };
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
-// Part 6: 
+// Part 6: Prime Numbers
+
+function checkPrime(num) {
+    for(let i=2; i < num; i++)
+        if(num % i === 0) return false;
+    return num >1;
+};
+checkPrime(3);
+console.log(checkPrime(3));
+
+function printPrimes(numb1) {
+    for (let i=0; i < numb1; i++) {
+        if (checkPrime() === true)
+    }
+    return printPrimes(97)
+}   
+ console.log(printPrimes(97));
+
+Part 7: Print Longest Word
+
+function printLongestWord(array) {
+    let longestWord = "";
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length > longestWord.length) {
+            longestWord = array [i]
+        } else if (array[i].length === longWord.length) {
+            return longestWord;
+        }
+    }
+    return longestWord;
+}
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
