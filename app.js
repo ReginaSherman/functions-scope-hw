@@ -18,3 +18,20 @@ console.log(calculateCube(5));
 
 // Part 3: Is a Vowel?
 
+function isAVowel(letter) {
+    if (letter === "a") {
+        return "true"
+    } else if (letter === "e") {
+        return "true"
+    } else if (letter === "i") {
+        return "true" 
+    } else if (letter === "o") {
+        return "true"
+    } else if (letter === "u") {
+        return "true"
+    } else {
+        return "false"
+    }
+}
+isAVowel("e");
+console.log(isAVowel("e"));
