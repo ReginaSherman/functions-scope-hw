@@ -18,23 +18,24 @@ console.log(calculateCube(5));
 
 // Part 3: Is a Vowel?
 
-function isAVowel(letter) {
-    if (letter !== "a") {
+function isAVowel(p1) {
+    let letter = p1.toLowerCase();
+    if (letter === "a") {
         return "true"
-    } else if (letter !== "e") {
+    } else if (letter === "e") {
         return "true"
-    } else if (letter !== "i") {
+    } else if (letter === "i") {
         return "true" 
-    } else if (letter !== "o") {
+    } else if (letter === "o") {
         return "true"
-    } else if (letter !== "u") {
+    } else if (letter === "u") {
         return "true"
     } else {
         return "false"
     }
 }
-isAVowel("I");
-console.log(isAVowel("I"));
+isAVowel("a");
+console.log(isAVowel("a"));
 
 // Part 4: Get Two Lengths
 
@@ -44,3 +45,15 @@ function getTwoLengths(str1, str2) {
 getTwoLengths("Hank", "Hippopopalous");
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 
+// Part 5: Sum Array
+
+function sumArray(array) {
+    let sum = 0;
+    for(let i =0; i < array.length; i++) {
+        sum += array [i];   
+    };
+    return sum;
+};
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+// Part 6: 
