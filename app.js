@@ -61,7 +61,7 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 function checkPrime(num) {
     for(let i=2; i < num; i++)
         if(num % i === 0) return false;
-    return num >1;
+    return num > 1;
 };
 checkPrime(3);
 console.log(checkPrime(3));
@@ -71,9 +71,9 @@ function printPrimes(numb1) {
         if (checkPrime(i) === true) {
             console.log(i)
         };
+        printPrimes(97);
     };
 };   
- printPrimes(97);
 
 // Part 7: Print Longest Word
 
@@ -90,3 +90,15 @@ function printLongestWord(array) {
 }
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+
+
+// Bonus: Needle in a Haystack
+
+function findNeedle(haystack) {
+    for (let i = 0; i < haystack.length; i++) {
+        if (i === "needle") {
+            return haystack.indexOf(i);
+            
+        }
+    }
+}
